@@ -371,3 +371,67 @@ body {
     animation: floatBubble 3.5s ease-in-out infinite;
     animation-delay: 1s;
 }   
+
+
+/* =========================
+   QUIÉNES SOMOS
+========================= */
+
+.about {
+    padding: 0;
+}
+
+.about__image {
+    width: 100%;
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            rgba(23, 77, 67, 0.25),
+            rgba(23, 77, 67, 0.25)
+        ),
+        url("imagenes/oficina.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.about__card {
+    max-width: 720px;
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+    padding: 55px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about__title {
+    font-size: 48px;
+
+    margin-bottom: 25px;
+
+    line-height: 1.1;
+}
+
+.about__text {
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+.about__text strong {
+    color: var(--orange);
+}
