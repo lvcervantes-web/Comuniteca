@@ -255,9 +255,10 @@ body {
     height: 210px;
 
     background-color: var(--orange);
+    opacity: .80;
 
     top: 160px;
-    right: 80px;
+    right: 85px;
 
     z-index: 2;
 
@@ -266,6 +267,8 @@ body {
     justify-content: center;
 
     align-items: center;
+
+    
 }
 
 .speech-bubble--orange::after {
@@ -405,7 +408,7 @@ body {
 .about__card {
     max-width: 720px;
 
-    background-color: var(--dark);
+    background-color: rgba(57, 72, 84, .90);
 
     color: var(--white);
 
@@ -434,4 +437,72 @@ body {
 
 .about__text strong {
     color: var(--orange);
+}
+
+/* =========================
+   SERVICIOS
+========================= */
+
+.services {
+    padding: 90px 0;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+
+.service-card {
+    padding: 35px;
+    border-radius: 20px;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--orange);
+}
+
+.service-card h3 {    
+    font-size: 26px;
+    margin-bottom: 15px;
+    
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-card__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: var(--teal);
+    color: var(--dark);
+
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+    }  
+    
+    
+    @media (max-width: 768px) {
+
+    .services__grid {
+        grid-template-columns: 1fr;
+    }
+
 }
